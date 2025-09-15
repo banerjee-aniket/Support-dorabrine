@@ -8,12 +8,13 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
         header { background: #222; color: #fff; text-align: center; padding: 20px; }
-        main { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        main { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; position: relative; }
         .content { max-width: 800px; background: #fff; padding: 20px; margin: 10px; border-radius: 8px; }
         .ad-banner { text-align: center; margin: 20px 0; }
         .ad-sidebar { position: fixed; top: 100px; right: 10px; }
         footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; background: #eee; margin-top: 20px; }
         a { color: #007bff; text-decoration: none; }
+        .smartlink { display:block; margin-top:15px; text-align:center; font-weight:bold; }
     </style>
 </head>
 <body>
@@ -25,53 +26,28 @@
 
 <main>
     <div class="content">
+        <!-- Main Ad: Native Banner -->
         <div class="ad-banner" id="ad_slot_1">
-            <strong>Main Ad Banner (300x250)</strong><br>
-            <!-- INSERT MAIN AD CODE HERE -->
-            <div style="width:300px; height:250px; border:1px solid #ccc; display:inline-block; text-align:center; line-height:250px;">
-                Ad Placeholder
-            </div>
+            <strong>Main Ad (Native Banner)</strong><br>
+            <script async="async" data-cfasync="false" src="//pl27650924.revenuecpmgate.com/7d6fa0b514ce69826259f4d4e2282754/invoke.js"></script>
+            <div id="container-7d6fa0b514ce69826259f4d4e2282754"></div>
         </div>
 
+        <!-- Optional Smartlink for extra revenue -->
+        <div class="smartlink">
+            <a href="https://www.revenuecpmgate.com/n9f35crfmw?key=05c0b45894824b26d618ed55dadc04f4" target="_blank">
+                Check out exclusive offers!
+            </a>
+        </div>
+
+        <!-- Call to action -->
         <div class="cta">
             <h3>🎮 Your Support Matters!</h3>
             <p>Just visit this page regularly to passively support the server. Your presence alone matters!</p>
         </div>
     </div>
 
-    <div class="ad-sidebar" id="ad_slot_2">
-        <strong>Sidebar Ad (160x600)</strong><br>
-        <!-- Sidebar ad script -->
-        <script type="text/javascript">
-            atOptions = {
-                'key' : '146ac0faefd804df2344f2cd0cbf8bee',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-            };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/146ac0faefd804df2344f2cd0cbf8bee/invoke.js"></script>
-    </div>
-</main>
-
-<footer>
-    <p>Join Our Community: <a href="https://discord.gg/7m4ndmVXpm" target="_blank">Discord Server</a></p>
-    <p>Contact us: <a href="mailto:support@ourgameserver.com">support@ourgameserver.com</a></p>
-    <p>
-        <a href="https://dorabrine.netlify.app/privacy-policy" target="_blank">Privacy Policy</a> |
-        <a href="https://dorabrine.netlify.app/terms" target="_blank">Terms of Service</a>
-    </p>
-    <p style="margin-top:10px; font-size:0.8rem;">We don’t track personal data. Ads are served by third-party providers like PropellerAds and Adsterra.</p>
-    <p style="margin-top:5px; font-size:0.8rem;">Created by Aniket Banerjee • Version 1.0.1</p>
-</footer>
-
-</body>
-</html>            <h3>🎮 Your Support Matters!</h3>
-            <p>Just visit this page regularly to passively support the server. Your presence alone matters!</p>
-        </div>
-    </div>
-
+    <!-- Sidebar Ad (160x600 Iframe) -->
     <div class="ad-sidebar" id="ad_slot_2">
         <strong>Sidebar Ad (160x600)</strong><br>
         <script type="text/javascript">
