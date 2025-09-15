@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support The Server By Watching Ads</title>
+    <meta name="description" content="Every ad you view helps keep our private game server alive and kicking. No sign-up, no hassle – just load, watch, and support. Thank you for being awesome!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+        <div class="loading-progress"></div>
+    </div>
+
+    <!-- Achievement popup -->
+    <div class="achievement-popup" id="achievementPopup">
+        <h4>🏆 Achievement Unlocked!</h4>
+        <p id="achievementText">You've supported the server!</p>
+    </div>
+
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Support Our Game Server</h1>
+            <p class="subtitle">This platform allows you to passively support the server by watching ads. Every impression contributes to covering server costs and keeping the community alive.</p>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="content-left">
+                <div class="intro-text">
+                    Every ad you view helps keep our private game server alive and kicking. No sign-up, no hassle – just load, watch, and support. Thank you for being awesome!
+                </div>
+
+                <!-- Timer Section -->
+                <div class="timer-section">
+                    <h3>⏰ Support Timer</h3>
+                    <p>Help keep our server running by spending time here!</p>
+                    
+                    <div class="timer-display" id="timerDisplay">00:00</div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <div class="progress-text" id="progressText">0% Complete</div>
+                    </div>
+                    
+                    <div class="timer-stats">
+                        <div class="stat-item">
+                            <div class="stat-value" id="todayTime">0m</div>
+                            <div class="stat-label">Today's Support</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalTime">0m</div>
+                            <div class="stat-label">Total Support</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="sessionsCount">0</div>
+                            <div class="stat-label">Sessions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="targetGoal">5m</div>
+                            <div class="stat-label">Daily Goal</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timer-controls">
+                        <button class="timer-btn" id="startBtn" onclick="startTimer()">▶️ Start Supporting</button>
+                        <button class="timer-btn" id="pauseBtn" onclick="pauseTimer()">⏸️ Pause</button>
+                        <button class="timer-btn danger" id="resetBtn" onclick="resetTimer()">🔄 Reset Session</button>
+                    </div>
+                    
+                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+                        💡 Goal: Spend 5+ minutes daily to maximize server support!
+                    </p>
+                </div>
+
+                <!-- Main ad slot -->
+                <div class="main-ad" id="ad_slot_1">
+                    <div>
+                        <strong>Main Ad Banner</strong><br>
+                        300x250<br>
+                        <!-- INSERT AD CODE HERE -->
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div class="cta">
+                    <h3>🎮 Your Support Matters!</h3>
+                    <p>Just visit this page regularly to passively support the server. Your presence alone matters!</p>
+                </div>
+            </div>
+
+            <!-- Sidebar ad -->
+            <div class="sidebar-ad" id="ad_slot_2">
+                <div>
+                    <strong>Sidebar Ad</strong><br>
+                    160x600<br>
+                    <!-- INSERT AD CODE HERE -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Join Our Community</h4>
+                    <a href="https://discord.gg/7m4ndmVXpm" class="social-link" target="_blank">
+                        🎮 Discord Server
+                    </a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact & Support</h4>
+                    <p>Email: <a href="mailto:support@ourgameserver.com">support@ourgameserver.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p><a href="https://dorabrine.netlify.app/privacy-policy" target="_blank">Privacy Policy</a></p>
+                    <p><a href="https://dorabrine.netlify.app/terms" target="_blank">Terms of Service</a></p>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <p>We don't track personal data. Ads are served by third-party providers like PropellerAds and Adsterra. Thank you for helping us stay online!</p>
+                <p style="margin-top: 15px; font-size: 0.8rem;">Created by Aniket Banerjee • Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
